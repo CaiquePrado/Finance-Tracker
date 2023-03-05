@@ -1,0 +1,52 @@
+{
+  "business": [
+    {
+      "id": 1,
+      "name": "sell of landing page",
+      "price": 100,
+      "category": "sell",
+      "type": "income",
+      "createdAt": "'2023-03-05T20:00:40.537Z'"
+    },
+    {
+      "id": 1,
+      "name": "sell of landing page",
+      "price": 100,
+      "category": "sell",
+      "type": "income",
+      "createdAt": "'2023-03-05T20:00:40.537Z'"
+    },
+    {
+      "id": 1,
+      "name": "sell of landing page",
+      "price": 100,
+      "category": "sell",
+      "type": "income",
+      "createdAt": "'2023-03-05T20:00:40.537Z'"
+    },
+    {
+      "id": 1,
+      "name": "sell of landing page",
+      "price": 100,
+      "category": "sell",
+      "type": "income",
+      "createdAt": "'2023-03-05T20:00:40.537Z'"
+    },
+    {
+      "id": 1,
+      "name": "sell of landing page",
+      "price": 100,
+      "category": "sell",
+      "type": "income",
+      "createdAt": "'2023-03-05T20:00:40.537Z'"
+    },
+    {
+      "id": 1,
+      "name": "sell of landing page",
+      "price": 100,
+      "category": "sell",
+      "type": "income",
+      "createdAt": "'2023-03-05T20:00:40.537Z'"
+    }
+  ]
+}
