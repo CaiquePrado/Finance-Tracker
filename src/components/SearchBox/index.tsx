@@ -4,7 +4,7 @@ export const SearchBox = () => {
   return (
     <SearchBoxContainer>
       <input
-        type="search"
+        // type="search"
         name="query"
         id="query"
         placeholder="Search a Profit or Outlay"
