@@ -47,8 +47,4 @@ export const ProfitOutlayButton = styled.button`
   color: ${(props) => props.theme.white};
   font-weight: 700;
   transition: filter 0.2s ease;
-
-  &:hover {
-    filter: contrast(150%);
-  }
 `;
