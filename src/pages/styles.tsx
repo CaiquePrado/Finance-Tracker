@@ -17,7 +17,7 @@ export const Table = styled.table`
     align-items: center;
     justify-content: space-around;
     height: 3.375rem;
-    margin: 1rem 0;
+    margin: 0.9rem 0;
 
     td {
       width: 100%;

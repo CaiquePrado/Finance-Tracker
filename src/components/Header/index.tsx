@@ -1,6 +1,6 @@
-import { HeaderContainer, ProfitOutlayButton } from "./styles";
-
+import { HeaderContainer } from "./styles";
 import { Wallet } from "phosphor-react";
+import { Modal } from "../Modal";
 
 export const Header = () => {
   return (
@@ -10,7 +10,7 @@ export const Header = () => {
         <h1>
           <span>F</span>inance<span> T</span>racker
         </h1>
-        <ProfitOutlayButton>New Profit / Otlay</ProfitOutlayButton>
+        <Modal />
       </div>
     </HeaderContainer>
   );
