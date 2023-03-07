@@ -1,3 +1,10 @@
+import { TrackerContext } from "../../contexts/TrackerContext";
+import { useContextSelector } from "use-context-selector";
+
+import { useForm, Controller } from "react-hook-form";
+import * as zod from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+
 import {
   Overlay,
   ProfitOutlayButton,
@@ -6,13 +13,8 @@ import {
   Options,
   OptionButton,
 } from "./styles";
-import * as Dialog from "@radix-ui/react-dialog";
 import { ArrowDown, ArrowUp, X } from "phosphor-react";
-import { useForm, Controller } from "react-hook-form";
-import * as zod from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useContextSelector } from "use-context-selector";
-import { TrackerContext } from "../../contexts/TrackerContext";
+import * as Dialog from "@radix-ui/react-dialog";
 
 type validatorModalSchemaData = zod.infer<typeof validatorModalSchema>;
 
@@ -64,7 +66,6 @@ export const Modal = () => {
             <input type="text" placeholder="Name" {...register("name")} />
             <input
               type="number"
-              step={10}
               placeholder="Price"
               {...register("price", { valueAsNumber: true })}
             />

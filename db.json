@@ -39,6 +39,22 @@
       "price": 1200,
       "createdAt": "2023-03-07T17:51:47.973Z",
       "id": 6
+    },
+    {
+      "name": "pizza",
+      "type": "outcome",
+      "category": "comida",
+      "price": 55,
+      "createdAt": "2023-03-07T18:44:58.290Z",
+      "id": 7
+    },
+    {
+      "name": "Caique Prado",
+      "type": "outcome",
+      "category": "venda",
+      "price": 3232,
+      "createdAt": "2023-03-07T18:45:41.217Z",
+      "id": 8
     }
   ]
 }

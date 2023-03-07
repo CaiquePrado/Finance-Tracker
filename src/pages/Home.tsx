@@ -1,8 +1,10 @@
+import { TrackerContext } from "../contexts/TrackerContext";
 import { useContextSelector } from "use-context-selector";
+
 import { Header } from "../components/Header";
 import { SearchBox } from "../components/SearchBox";
 import { Tracker } from "../components/Tracker";
-import { TrackerContext } from "../contexts/TrackerContext";
+
 import { HomeContainer, Table } from "./styles";
 
 export const Home = () => {

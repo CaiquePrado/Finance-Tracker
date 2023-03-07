@@ -1,9 +1,11 @@
-import { SearchBoxContainer } from "./styles";
+import { useContextSelector } from "use-context-selector";
+import { TrackerContext } from "../../contexts/TrackerContext";
+
 import { useForm } from "react-hook-form";
 import * as zod from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useContextSelector } from "use-context-selector";
-import { TrackerContext } from "../../contexts/TrackerContext";
+
+import { SearchBoxContainer } from "./styles";
 
 type validatorSearchSchemaData = zod.infer<typeof validatorSearchSchema>;
 
