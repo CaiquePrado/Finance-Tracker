@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import * as Dialog from "@radix-ui/react-dialog";
+import * as RadioGroup from "@radix-ui/react-radio-group";
 
 export const ProfitOutlayButton = styled.button`
   background-color: ${(props) => props.theme.blue};
@@ -90,25 +91,26 @@ export const CloseButton = styled(Dialog.DialogClose)`
   color: ${(props) => props.theme.blue};
 `;
 
-export const Options = styled.div`
+export const Options = styled(RadioGroup.Root)`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin-top: 0.5rem;
-  button {
-    background-color: ${(props) => props.theme["blue-600"]};
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    border-radius: 8px;
-    cursor: pointer;
-    border: 0;
-    color: ${(props) => props.theme["gray-100"]};
+`;
 
-    svg {
-      color: ${(props) => props.theme["blue-400"]};
-    }
+export const OptionButton = styled(RadioGroup.Item)`
+  background-color: ${(props) => props.theme["blue-600"]};
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 0;
+  color: ${(props) => props.theme["gray-100"]};
+
+  svg {
+    color: ${(props) => props.theme["blue-400"]};
   }
 `;

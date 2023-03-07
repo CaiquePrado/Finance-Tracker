@@ -1,9 +1,15 @@
+import { useContextSelector } from "use-context-selector";
 import { Header } from "../components/Header";
 import { SearchBox } from "../components/SearchBox";
 import { Tracker } from "../components/Tracker";
+import { TrackerContext } from "../contexts/TrackerContext";
 import { HomeContainer, Table } from "./styles";
 
 export const Home = () => {
+  const expenses = useContextSelector(TrackerContext, (context) => {
+    return context.expenses;
+  });
+
   return (
     <>
       <Header />
@@ -12,36 +18,23 @@ export const Home = () => {
       <HomeContainer>
         <Table>
           <tbody>
-            <tr>
-              <td>Venda de landing Page</td>
-              <td>Venda</td>
-              <td>R$ 100.00</td>
-              <td>06/03/2023</td>
-            </tr>
-            <tr>
-              <td>Venda de landing Page</td>
-              <td>Venda</td>
-              <td>R$ 100.00</td>
-              <td>06/03/2023</td>
-            </tr>
-            <tr>
-              <td>Venda de landing Page</td>
-              <td>Venda</td>
-              <td>R$ 100.00</td>
-              <td>06/03/2023</td>
-            </tr>
-            <tr>
-              <td>Venda de landing Page</td>
-              <td>Venda</td>
-              <td>R$ 100.00</td>
-              <td>06/03/2023</td>
-            </tr>
-            <tr>
-              <td>Venda de landing Page</td>
-              <td>Venda</td>
-              <td>R$ 100.00</td>
-              <td>06/03/2023</td>
-            </tr>
+            {expenses.map((item) => (
+              <tr key={item.id}>
+                <td>{item.name}</td>
+                <td>{item.type}</td>
+                <td>
+                  {new Intl.NumberFormat("pt-br", {
+                    style: "currency",
+                    currency: "BRL",
+                  }).format(item.price)}
+                </td>
+                <td>
+                  {new Intl.DateTimeFormat("pt-br").format(
+                    new Date(item.createdAt)
+                  )}
+                </td>
+              </tr>
+            ))}
           </tbody>
         </Table>
       </HomeContainer>
