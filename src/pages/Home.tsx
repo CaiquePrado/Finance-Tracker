@@ -21,13 +21,14 @@ export const Home = () => {
             {expenses.map((item) => (
               <tr key={item.id}>
                 <td>{item.name}</td>
-                <td>{item.type}</td>
+                <td>{item.category}</td>
                 <td>
                   {new Intl.NumberFormat("pt-br", {
                     style: "currency",
                     currency: "BRL",
                   }).format(item.price)}
                 </td>
+
                 <td>
                   {new Intl.DateTimeFormat("pt-br").format(
                     new Date(item.createdAt)

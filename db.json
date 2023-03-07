@@ -5,32 +5,32 @@
       "name": "sell of landing page",
       "price": 100,
       "category": "sell",
-      "type": " income",
-      "createdAt": "'2023-03-05T20:00:40.537Z'"
+      "type": "income",
+      "createdAt": "2023-03-05T20:00:40.537Z"
     },
     {
       "id": 2,
       "name": "sell of landing page",
       "price": 100,
       "category": "sell",
-      "type": " income",
-      "createdAt": "'2023-03-05T20:00:40.537Z'"
+      "type": "income",
+      "createdAt": "2023-03-05T20:00:40.537Z"
     },
     {
       "id": 3,
       "name": "sell of landing page",
       "price": 100,
       "category": "sell",
-      "type": " income",
-      "createdAt": "'2023-03-05T20:00:40.537Z'"
+      "type": "income",
+      "createdAt": "2023-03-05T20:00:40.537Z"
     },
     {
       "id": 4,
       "name": "sell of landing page",
       "price": 100,
       "category": "sell",
-      "type": " income",
-      "createdAt": "'2023-03-05T20:00:40.537Z'"
+      "type": "income",
+      "createdAt": "2023-03-05T20:00:40.537Z"
     },
     {
       "id": 5,
@@ -38,15 +38,15 @@
       "price": 100,
       "category": "sell",
       "type": " income",
-      "createdAt": "'2023-03-05T20:00:40.537Z'"
+      "createdAt": "2023-03-05T20:00:40.537Z"
     },
     {
       "id": 6,
       "name": "sell of landing page",
       "price": 100,
       "category": "sell",
-      "type": " income",
-      "createdAt": "'2023-03-05T20:00:40.537Z'"
+      "type": "income",
+      "createdAt": "2023-03-05T20:00:40.537Z"
     }
   ]
 }

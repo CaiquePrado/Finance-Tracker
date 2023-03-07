@@ -7,7 +7,6 @@ type createExpenses = {
   price: number;
   type: "income" | "outcome";
   category: string;
-  createdAt: string;
 };
 
 type expenses = {
@@ -16,11 +15,13 @@ type expenses = {
   price: number;
   type: "income" | "outcome";
   createdAt: string;
+  category: string;
 };
 
 interface TrackerContextData {
   expenses: expenses[];
   createExpenses: (data: createExpenses) => Promise<void>;
+  loadExpenses: (query?: string) => Promise<void>;
 }
 interface TrackerProviderProps {
   children: ReactNode;
@@ -44,8 +45,17 @@ export const TrackerProvider = ({ children }: TrackerProviderProps) => {
     setExpense((state) => [response.data, ...state]);
   }, []);
 
+  const loadExpenses = useCallback(async (query?: string) => {
+    const response = await api.get("/business", { params: { q: query } });
+    setExpense(response.data);
+  }, []);
+
+  useEffect(() => {
+    loadExpenses();
+  }, [loadExpenses]);
+
   return (
-    <TrackerContext.Provider value={{ expenses, createExpenses }}>
+    <TrackerContext.Provider value={{ expenses, createExpenses, loadExpenses }}>
       {children}
     </TrackerContext.Provider>
   );
