@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "server": "json-server db.json -w"
+    "server": "json-server db.json -w -d 750"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.11",

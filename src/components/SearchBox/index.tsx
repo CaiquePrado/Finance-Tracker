@@ -12,7 +12,11 @@ const validatorSearchSchema = zod.object({
 });
 
 export const SearchBox = () => {
-  const { register, handleSubmit } = useForm<validatorSearchSchemaData>({
+  const {
+    register,
+    handleSubmit,
+    formState: { isSubmitting },
+  } = useForm<validatorSearchSchemaData>({
     resolver: zodResolver(validatorSearchSchema),
     defaultValues: {
       query: "",
@@ -35,7 +39,7 @@ export const SearchBox = () => {
         id="query"
         placeholder="Search a Profit or Outlay"
       />
-      <button>Search</button>
+      <button disabled={isSubmitting}>Search</button>
     </SearchBoxContainer>
   );
 };

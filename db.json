@@ -33,20 +33,12 @@
       "createdAt": "2023-03-05T20:00:40.537Z"
     },
     {
-      "id": 5,
-      "name": "sell of landing page",
-      "price": 100,
-      "category": "sell",
-      "type": " income",
-      "createdAt": "2023-03-05T20:00:40.537Z"
-    },
-    {
-      "id": 6,
-      "name": "sell of landing page",
-      "price": 100,
-      "category": "sell",
+      "name": "salario",
       "type": "income",
-      "createdAt": "2023-03-05T20:00:40.537Z"
+      "category": "venda",
+      "price": 1200,
+      "createdAt": "2023-03-07T17:51:47.973Z",
+      "id": 6
     }
   ]
 }

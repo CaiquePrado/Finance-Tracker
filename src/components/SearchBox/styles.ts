@@ -31,5 +31,10 @@ export const SearchBoxContainer = styled.form`
     color: ${(props) => props.theme.white};
     font-weight: 700;
     font-size: 1rem;
+
+    &:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+    }
   }
 `;
