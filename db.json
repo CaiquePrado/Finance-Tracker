@@ -1,44 +1,12 @@
 {
   "business": [
     {
-      "id": 1,
-      "name": "sell of landing page",
-      "price": 100,
-      "category": "sell",
-      "type": "income",
-      "createdAt": "2023-03-05T20:00:40.537Z"
-    },
-    {
-      "id": 2,
-      "name": "sell of landing page",
-      "price": 100,
-      "category": "sell",
-      "type": "income",
-      "createdAt": "2023-03-05T20:00:40.537Z"
-    },
-    {
-      "id": 3,
-      "name": "sell of landing page",
-      "price": 100,
-      "category": "sell",
-      "type": "income",
-      "createdAt": "2023-03-05T20:00:40.537Z"
-    },
-    {
-      "id": 4,
-      "name": "sell of landing page",
-      "price": 100,
-      "category": "sell",
-      "type": "income",
-      "createdAt": "2023-03-05T20:00:40.537Z"
-    },
-    {
       "name": "salario",
       "type": "income",
       "category": "venda",
       "price": 1200,
       "createdAt": "2023-03-07T17:51:47.973Z",
-      "id": 6
+      "id": 1
     },
     {
       "name": "pizza",
@@ -46,15 +14,23 @@
       "category": "comida",
       "price": 55,
       "createdAt": "2023-03-07T18:44:58.290Z",
-      "id": 7
+      "id": 2
     },
     {
       "name": "Caique Prado",
+      "type": "income",
+      "category": "compra",
+      "price": 1000,
+      "createdAt": "2023-03-08T14:26:04.759Z",
+      "id": 3
+    },
+    {
+      "name": "Beat",
       "type": "outcome",
-      "category": "venda",
-      "price": 3232,
-      "createdAt": "2023-03-07T18:45:41.217Z",
-      "id": 8
+      "category": "compra",
+      "price": 200,
+      "createdAt": "2023-03-08T14:38:27.197Z",
+      "id": 4
     }
   ]
 }

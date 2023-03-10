@@ -26,22 +26,23 @@ const validatorModalSchema = zod.object({
 });
 
 export const Modal = () => {
-  const { register, handleSubmit, reset, control } =
-    useForm<validatorModalSchemaData>({
-      resolver: zodResolver(validatorModalSchema),
-      defaultValues: {
-        name: "",
-        category: "",
-      },
-    });
+  const {
+    register,
+    handleSubmit,
+    reset,
+    control,
+    formState: { isSubmitting },
+  } = useForm<validatorModalSchemaData>({
+    resolver: zodResolver(validatorModalSchema),
+  });
 
   const handleModalSubmit = async (data: validatorModalSchemaData) => {
     const { name, type, category, price } = data;
     await createExpenses({
       name,
+      price,
       type,
       category,
-      price,
     });
     reset();
   };
@@ -63,15 +64,22 @@ export const Modal = () => {
           </CloseButton>
           <Dialog.Title>New Profit | Expense</Dialog.Title>
           <form onSubmit={handleSubmit(handleModalSubmit)}>
-            <input type="text" placeholder="Name" {...register("name")} />
+            <input
+              type="text"
+              required
+              placeholder="Name"
+              {...register("name")}
+            />
             <input
               type="number"
               placeholder="Price"
+              required
               {...register("price", { valueAsNumber: true })}
             />
             <input
               type="text"
               placeholder="Category"
+              required
               {...register("category")}
             />
             <Controller
@@ -92,7 +100,9 @@ export const Modal = () => {
                 );
               }}
             />
-            <button type="submit">Register</button>
+            <button disabled={isSubmitting} type="submit">
+              Register
+            </button>
           </form>
         </Content>
       </Dialog.Portal>

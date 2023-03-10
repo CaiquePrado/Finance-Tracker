@@ -10,4 +10,6 @@ export const defaultTheme = {
   "blue-700": "#0B1B2B",
   "blue-800": "#071422",
   "blue-900": "#040F1A",
+  money: "#7CFC00",
+  "money-negative": "#EE4B2B",
 };

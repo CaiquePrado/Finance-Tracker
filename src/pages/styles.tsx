@@ -39,3 +39,14 @@ export const Table = styled.table`
     }
   }
 `;
+
+interface ItemPriceProps {
+  variant: "income" | "outcome";
+}
+
+export const ItemPrice = styled.span<ItemPriceProps>`
+  color: ${(props) =>
+    props.variant === "outcome"
+      ? props.theme["money-negative"]
+      : props.theme.money};
+`;

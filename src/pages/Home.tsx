@@ -5,7 +5,7 @@ import { Header } from "../components/Header";
 import { SearchBox } from "../components/SearchBox";
 import { Tracker } from "../components/Tracker";
 
-import { HomeContainer, Table } from "./styles";
+import { HomeContainer, ItemPrice, Table } from "./styles";
 
 export const Home = () => {
   const expenses = useContextSelector(TrackerContext, (context) => {
@@ -25,10 +25,13 @@ export const Home = () => {
                 <td>{item.name}</td>
                 <td>{item.category}</td>
                 <td>
-                  {new Intl.NumberFormat("pt-br", {
-                    style: "currency",
-                    currency: "BRL",
-                  }).format(item.price)}
+                  <ItemPrice variant={item.type}>
+                    {item.type === "outcome" && "-"}
+                    {new Intl.NumberFormat("pt-br", {
+                      style: "currency",
+                      currency: "BRL",
+                    }).format(item.price)}
+                  </ItemPrice>
                 </td>
 
                 <td>

@@ -70,20 +70,24 @@ export const Content = styled(Dialog.DialogContent)`
       color: ${(props) => props.theme.white};
       background-color: ${(props) => props.theme.blue};
       border-radius: 0.5rem;
-      margin-top: 1.5rem;
+      margin-top: 1rem;
       padding: 0 1.25rem;
+
+      &:disabled {
+        cursor: not-allowed;
+        opacity: 0.7;
+      }
     }
   }
 `;
 
 export const CloseButton = styled(Dialog.DialogClose)`
   display: inline-flex;
-  padding: 1.5rem;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 1.5rem;
+  right: 1.5rem;
   background: transparent;
   font-weight: bold;
   cursor: pointer;
@@ -109,8 +113,13 @@ export const OptionButton = styled(RadioGroup.Item)`
   cursor: pointer;
   border: 0;
   color: ${(props) => props.theme["gray-100"]};
+  border: 3px solid transparent};
 
   svg {
     color: ${(props) => props.theme["blue-400"]};
+  }
+
+  &:hover{
+    border: 3px solid ${(props) => props.theme["blue-400"]};
   }
 `;

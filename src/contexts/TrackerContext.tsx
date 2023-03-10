@@ -46,7 +46,9 @@ export const TrackerProvider = ({ children }: TrackerProviderProps) => {
   }, []);
 
   const loadExpenses = useCallback(async (query?: string) => {
-    const response = await api.get("/business", { params: { q: query } });
+    const response = await api.get("/business", {
+      params: { q: query, order: "desc" },
+    });
     setExpense(response.data);
   }, []);
 
