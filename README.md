@@ -1,9 +1,6 @@
-<img alt="Proffy" src="./github/banner.png">
+
 
 <p align="center">
-  <a href="https://github.com/Daniel-Vinicius">
-    <img alt="Feito pelo Daniel Vinícius" src="https://img.shields.io/badge/FEITO%   20POR-DANIEL%20VIN%C3%8DCIUS-green">
-  </a>
   <img alt="Licença do Projeto" src="https://img.shields.io/badge/LICENSE-MIT-green"/>
 <p>
 
@@ -14,19 +11,20 @@
  <a href="#triangular_ruler-status-do-projeto">Status</a> •
  <a href="#movie_camera-demonstração">Demonstração</a> •
  <a href="#dvd-executar-o-projeto">Executar</a> •
+  <a href="#dvd-executar-o-projeto">Design</a> •
  <a href="#hammer-tecnologias">Tecnologias</a> •
  <a href="#boy-autor">Autor</a> 
 </p>
 
 <h2 align="center"><img alt="Imagem do Projeto" id="imagem" title="#Projeto"
- src="Onde está sua imagem" /> 
+ src="/src/assets/finance.png" /> 
 </h2>
 
 ### Features 
-- [x] Adicionar uma nova tarefa
-- [x] Remover uma tarefa da listagem
-- [x] Marcar e desmarcar uma tarefa como concluída
-- [x] Mostrar o progresso de conclusão das tarefas
+- [x] Adicionar uma novo valor
+- [x] Remover uma valor da listagem
+- [x] Pesquisar valor específico
+- [ ] Paginação
 
 <h4  align="left">
 Projeto finalizado ✔
@@ -46,7 +44,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
    
 ````bash 
  # Clone este repositório
- git clone https://github.com/Seu-perfil/repositorio 
+ git clone https://github.com/CaiquePrado/Finance-Tracker.git 
  # Acesse a pasta do projeto no terminal
  cd pasta
  
@@ -63,6 +61,10 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
  ````
 <p> Quando você tiver realizado todos os passos do projeto verá a  <a href="#imagem" >imagem do projeto</a> </p>
 
+### 🎨 Design<a id="tecnologias"></a>
+
+ - [Figma](https://www.figma.com/file/mOtJ2JpKHOumMC5E92R0Tq/Finance-Tracker?node-id=0%3A1&t=pCcgi74tjbD3YlZw-1) 
+
 ### 🛠 Tecnologias<a id="tecnologias"></a>
  As seguintes ferramentas foram usadas na construção do projeto:
  
@@ -70,17 +72,15 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
   - [Typescript](https://www.typescriptlang.org/)
   - [Phosphor Icons](https://phosphoricons.com/)
   - [Styled-Components](https://styled-components.com/) 
+  - [Json-Server](https://github.com/typicode/json-server) 
+  - [Zod](https://github.com/colinhacks/zod) 
   - [React-Hook-Form](https://react-hook-form.com/) 
-  - [Radix](https://www.radix-ui.com/docs/primitives/components/dialog) 
-  - [Axios](https://axios-http.com/ptbr/docs/intro)
-  - [Use-Context-Selector](https://github.com/dai-shi/use-context-selector)
-  - [Json-Server](https://github.com/typicode/json-server)
+  - [Axios](https://axios-http.com/ptbr/docs/api_intro) 
+  - [Radix](https://www.radix-ui.com/) 
+
   ### Autor <a id="autor"> </a>
 
 ---
 <a href="https://github.com/CaiquePrado" style="text-decoration: none;">
-<img style="border-radius: 50%;" src="url-de-alguma-imagem-por-exemplo-do-github"/>
-
-<br />
-<span> Feito por Caique 👋 Entre em contato! </span> 
+<span> Feito com 💙 por Caique Prado</span> 
 </a> 
