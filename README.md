@@ -70,7 +70,11 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
   - [Typescript](https://www.typescriptlang.org/)
   - [Phosphor Icons](https://phosphoricons.com/)
   - [Styled-Components](https://styled-components.com/) 
-  
+  - [React-Hook-Form](https://react-hook-form.com/) 
+  - [Radix](https://www.radix-ui.com/docs/primitives/components/dialog) 
+  - [Axios](https://axios-http.com/ptbr/docs/intro)
+  - [Use-Context-Selector](https://github.com/dai-shi/use-context-selector)
+  - [Json-Server](https://github.com/typicode/json-server)
   ### Autor <a id="autor"> </a>
 
 ---
